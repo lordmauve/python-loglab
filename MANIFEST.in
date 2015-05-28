@@ -1,0 +1,7 @@
+include AUTHORS
+include README
+include LICENSE
+include docs/Makefile
+recursive-include tests *.py
+recursive-include examples *.py *.ini
+recursive-include docs *.py *.rst
