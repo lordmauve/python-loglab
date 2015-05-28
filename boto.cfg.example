@@ -1,0 +1,6 @@
+[Credentials]
+# Uncomment and enter the 20-character access key below
+# aws_access_key_id =
+
+# Uncomment and enter the 40-character secret key
+# aws_secret_access_key = 

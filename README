@@ -1,0 +1,16 @@
+Loglab
+======
+
+Loglab is a Python library for generator-based log processing; supported logs
+currently include Combined log format and Amazon S3 logs.
+
+License
+-------
+
+This software is licensed under the GNU GPL version 3 or later. See the
+``LICENSE`` file for a copy of this license.
+
+History
+-------
+
+Developed for the UK Department for Education by Capita National Strategies.

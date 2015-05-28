@@ -1,0 +1,30 @@
+# Malformed verb/protocol
+81.29.85.80 - - [01/Mar/2010:00:10:29 +0000] "Secure * Secure-HTTP/1.4" 404 16041 "-" "-" "-"
+
+# Not an HTTP request
+- - - [01/Mar/2010:00:10:28 +0000] "GNUTELLA CONNECT/0.6 " 400 226 "-" "-" "-"
+
+# null response code
+192.168.1.108 - - [00/Jan/1900:00:00:00 +0000] "POST http://nationalstrategies.standards.dcsf.gov.uk/search/results/ HTTP/1.1" (null) - "http://nationalstrategies.standards.dcsf.gov.uk/primary/publications/banda/seal/" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)"
+
+# nulls across the board
+- - - [28/Feb/2010:14:52:13 +0000] "(null) (null) (null)" (null) 2098 "-" "-"
+
+# malformed user
+81.29.85.80 - ' or '1=1 [01/Mar/2010:02:28:11 +0000] "GET http://89-151-119-207.servers.dedipower.net/user/admin.php HTTP/1.1" 301 271 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)"
+
+# Malformed request
+81.29.85.80 - - [01/Mar/2010:02:18:23 +0000] "GET http://89-151-119-207.servers.dedipower.netHTTP/1.1 " 400 226 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)"
+
+# Doesn't even look like a log line
+192.168.1.108 - a a 1
+
+# invalid ip / ident provided (but unexpected)
+new 1234567890 root [01/Mar/2010:02:22:50 +0000] "GET http://89-151-119-207.servers.dedipower.net/service.php?s=nav&arg[]=&arg[]=home&q=ubercrumb/node%2F20812 HTTP/1.1" 200 60 "-" "webmin"
+new 1234567890 root [01/Mar/2010:02:22:49 +0000] "GET http://89-151-119-207.servers.dedipower.net/ HTTP/1.1" 200 - "-" "webmin"
+
+# blank user
+88.211.33.26 -  [02/Mar/2010:10:25:18 +0000] "GET http://www.nsonline.org.uk/download/attachments/17827154/Cs-SME-cord.jpg HTTP/1.1" 401 401 "-" "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.8) Gecko/20100215 Ubuntu/9.04 (jaunty) Shiretoko/3.5.8"
+
+# malformed user?
+192.168.1.108 - www.cbnpayment_cbngovinfo1 [17/Mar/2010:08:45:29 +0000] "GET http://nationalstrategies.standards.dcsf.gov.uk/secondary/ HTTP/1.0" 200 - "-" "Mozilla/3.0 (compatible)"
